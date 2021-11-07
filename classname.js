@@ -11,5 +11,6 @@ function changeLine1(){
 }
 
 function changeColor() {
-  document.getElementById("line1").setAttribute("fill", "blue");
+  console.log("change color");
+  document.getElementById("line1").style.fill="blue";
 }
