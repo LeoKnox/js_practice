@@ -6,8 +6,10 @@ let x = document.getElementsByClassName("red");
 
 console.log(typeof(x[0]));
 
+newpoint = 75;
+
 function changeLine1(){
-  document.getElementById("line1").setAttribute("points", "0,35 200,25 200,40 0,50");
+  document.getElementById("line1").setAttribute("points", "0,35 200,"+ newpoint +" 200,40 0,50");
 }
 
 function changeColor() {
