@@ -1,5 +1,8 @@
 #shapes {
-  background-color:red;
-  transform-origin:left top;
-  transform: translate(var(--posX, 0), var(--posY, 0)) scaleX(var(--scale, 1));
+  transform: rotate(50);
+  fill:red;
+}
+
+#green {
+  transform: roate(40);
 }
