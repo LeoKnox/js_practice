@@ -1,6 +1,8 @@
 let a = [5, 6, 3, 9, 1];
 let b = [4, 2, 9, 8];
-c = a;
+e = [1];
+f = [];
+c = e;
 
 for (i = c.length-1; i >= 0; i--) {
   c.push(c[i]);
