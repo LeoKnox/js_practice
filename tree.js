@@ -7,8 +7,13 @@ function Bst(value) {
     this.left = new Bst(treeValue);
   }
   
+  this.print = function() {
+    console.log(this.left.value);
+  }
+  
 }
 
 a = new Bst(5);
 a.add(3);
-console.log (a);
+a.print();
+
