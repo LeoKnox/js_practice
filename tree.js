@@ -17,6 +17,12 @@ class Bst
     if (this.head == null) {
       this.head = new Node(value);
     } else {
+      let runner = this.head;
+      if (runner.left == null) {
+        runner.left = new Node(value);
+      } else {
+        runner = runner.left;
+      }
     }
     console.log("read" + value);
   }
@@ -25,6 +31,11 @@ class Bst
 a = new Bst;
 //a.head = new Node(5);
 a.insert(4);
+a.insert(3);
+a.insert(2);
 console.log(a);
+
+
+
 
 
