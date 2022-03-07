@@ -43,6 +43,23 @@ class LinkedList{
       runner = runner.next;
     }
   }
+  
+  delete_at(index) {
+    if (index > this.count-1) {
+      console.log("out of range");
+    }
+    if (index == 0) {
+       this.head = this.head.next;
+    } else {
+      let temp = 0;
+      let runner = this.head;
+      while (temp < index-1) {
+        runner = runner.next;
+      }
+      runner = runner.next;
+      this.count--;
+    }
+  }
 }
 
 
@@ -52,4 +69,6 @@ a.insert(5);
 a.insert(9);
 a.find(5);
 a.find(10);
+a.delete_at(0);
 a.display();
+a.delete_at(10);
