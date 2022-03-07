@@ -5,3 +5,5 @@ stack.push(8);
 stack.push(9);
 stack.push(3);
 console.log(stack);
+value = stack.pop();
+console.log(value);
