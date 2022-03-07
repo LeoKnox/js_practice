@@ -4,7 +4,8 @@ function countdown(x) {
   } else {
     console.log(x + "...");
     countdown(x-1);
+    console.log("extra");
   }
 }
 
-countdown(10);
+countdown(3);
